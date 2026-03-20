@@ -7,6 +7,12 @@ from cryptography.fernet import Fernet
 class Cryptage:
     CLE_FERNET = b"irV6l0r7WT7JAdS1dxNUCUiOQAie34HAyCIcIUWYcJU=" #initialisation de la clé
 
+"""
+    le code utilise la clé fernet pour encrypter et décrypter.
+    on pourrait changer la clé qui est utilisé pour crypter et decrypter mais on assume la même clé pour ce code
+    
+"""
+ 
     def __init__(self):
         self.cipher = Fernet(self.CLE_FERNET)
 

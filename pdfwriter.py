@@ -2,7 +2,7 @@ from pdfrw import PdfReader, PdfWriter, PdfDict, PdfName
 class PDFWriter :
     def __init__(self) :
         pass    
-
+    # focntion qui remplie les champs de pdf avec le texte données
     def remplir_pdf(self, modele_pdf, sortie_pdf, donnees):
         pdf = PdfReader(modele_pdf)
 
@@ -12,9 +12,11 @@ class PDFWriter :
                 continue
 
             for annot in annotations:
-                if annot.Subtype == PdfName.Widget and annot.T:
+                if annot.Subtype == PdfName.Widget and annot.T: #récupérons le noms des champs 
                     key = annot.T[1:-1]  # enlever parenthèses
 
+
+                    #si le champs existe dans les données on entre leur valeurs dans le champs
                     if key in donnees:
                         value = donnees[key]
 

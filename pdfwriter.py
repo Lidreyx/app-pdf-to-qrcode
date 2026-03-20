@@ -6,6 +6,8 @@ class PDFWriter :
     def remplir_pdf(self, modele_pdf, sortie_pdf, donnees):
         pdf = PdfReader(modele_pdf)
 
+
+        #parcours toute les pages du pdf et récupère le nom des champs
         for page in pdf.pages:
             annotations = page.Annots
             if not annotations:

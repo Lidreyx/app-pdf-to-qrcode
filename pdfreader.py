@@ -1,5 +1,13 @@
 from PyPDF2 import PdfReader
 class PDFReader :
+
+"""
+
+    le but de cette fonction est de lire un pdf afin de récupérer les informations des champs d'entrée 
+    associe chaque clé (noms champs) à une valeure ( contenu des champs) afin de conserver les données
+    
+"""
+
     
     def __init__(self) :
         pass

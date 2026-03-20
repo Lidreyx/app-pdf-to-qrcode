@@ -7,18 +7,18 @@ l'objectif est de pouvoir transférer les infos d'un pdf à un autre avec pour s
 
 fonctionnalité : 
 
-#### pdfwriter.py
+### pdfwriter.py
 classe PDFWriter:  
 - remplir_pdf() fonction qui demande un pdf blanc à remplir à partir des données/texte que l'utilisateur fournit
 
-#### cryptage.py
+### cryptage.py
 classe Cryptage:
 - chiffrage = encode les données
 
-#### case.py
+### case.py
 - case = sert à identifier le nom des champs (si besoin de les modifiers)
 
-#### pdfreader.py
+### pdfreader.py
 PDFReader :
 - extraire_infos_pdf = récupère le texte des champs  ( à modifier si besoin car si le nom est pas bon ça n'y touche pas)
 

@@ -1,5 +1,15 @@
 from pdfrw import PdfReader, PdfWriter, PdfDict, PdfName
 class PDFWriter :
+
+"""
+
+    cette fonction est là pour écrire dans un pdf
+    d'abord il faut un template (modele_pdf)
+    puis le nom du pdf à la sorti (sortie_pdf)
+    et enfin l'information mise dans le pdf (donnees)
+    
+"""
+    
     def __init__(self) :
         pass    
     # focntion qui remplie les champs de pdf avec le texte données
